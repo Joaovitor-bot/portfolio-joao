@@ -126,6 +126,43 @@ function App() {
         </div>
       </section>
 
+            <section className="experience">
+        <div className="section-header">
+          <p className="section-tag">Experiência</p>
+          <h2>Minha trajetória profissional</h2>
+        </div>
+
+        <div className="timeline">
+          <div className="timeline-item">
+            <div className="timeline-year">2024</div>
+
+            <div className="timeline-card">
+              <h3>Suporte Técnico</h3>
+              <span>Prefeitura de Jaboatão dos Guararapes</span>
+              <p>
+                Atuação com suporte técnico, instalação de softwares,
+                atendimento a usuários e apoio em soluções de tecnologia da
+                informação.
+              </p>
+            </div>
+          </div>
+
+          <div className="timeline-item">
+            <div className="timeline-year">2024 - 2026</div>
+
+            <div className="timeline-card">
+              <h3>Auxiliar de Produção</h3>
+              <span>Stellantis</span>
+              <p>
+                Experiência profissional em ambiente corporativo, desenvolvendo
+                responsabilidade, organização, trabalho em equipe e disciplina
+                na rotina operacional.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
     </main>
   );
 }
