@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@500;600;700&display=swap");
+
 :root {
   --deep-navy: #091540;
   --persian-blue: #1b2cc1;
@@ -861,4 +863,119 @@ body {
 
 .skill-icon {
   transition: 0.3s;
+}
+
+body {
+  font-family: "Inter", Arial, sans-serif;
+}
+
+h1,
+h2,
+h3,
+.logo,
+.btn,
+.section-tag {
+  font-family: "Space Grotesk", Arial, sans-serif;
+}
+
+.about-text,
+.skill-card,
+.timeline-card,
+.project-card,
+.certificate-card,
+.contact-box {
+  background: linear-gradient(
+    145deg,
+    rgba(8, 18, 52, 0.92),
+    rgba(2, 6, 23, 0.88)
+  );
+  border: 1px solid rgba(63, 111, 255, 0.28);
+  border-radius: 26px;
+  box-shadow:
+    0 18px 50px rgba(0, 0, 0, 0.38),
+    inset 0 1px 0 rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(18px);
+  position: relative;
+  overflow: hidden;
+}
+
+.about-text::before,
+.skill-card::before,
+.timeline-card::before,
+.project-card::before,
+.certificate-card::before,
+.contact-box::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    circle at top right,
+    rgba(63, 111, 255, 0.18),
+    transparent 38%
+  );
+  opacity: 0;
+  transition: 0.35s ease;
+  pointer-events: none;
+}
+
+.about-text:hover::before,
+.skill-card:hover::before,
+.timeline-card:hover::before,
+.project-card:hover::before,
+.certificate-card:hover::before,
+.contact-box:hover::before {
+  opacity: 1;
+}
+
+.about-text:hover,
+.skill-card:hover,
+.timeline-card:hover,
+.project-card:hover,
+.certificate-card:hover,
+.contact-box:hover {
+  transform: translateY(-6px);
+  border-color: rgba(96, 140, 255, 0.75);
+  box-shadow:
+    0 24px 65px rgba(0, 0, 0, 0.5),
+    0 0 35px rgba(63, 111, 255, 0.18);
+}
+
+.about-text > *,
+.skill-card > *,
+.timeline-card > *,
+.project-card > *,
+.certificate-card > *,
+.contact-box > * {
+  position: relative;
+  z-index: 1;
+}
+
+.about-text p,
+.skill-card p,
+.timeline-card p,
+.project-content p,
+.certificate-card p,
+.contact-box p {
+  color: #c6dcff;
+}
+
+.skill-card h3,
+.timeline-card h3,
+.project-content h3,
+.certificate-card h3,
+.contact-text h3 {
+  color: #ffffff;
+  letter-spacing: -0.02em;
+}
+
+.section-header h2 {
+  letter-spacing: -0.04em;
+}
+
+.hero h1 {
+  letter-spacing: -0.06em;
+}
+
+.hero h2 {
+  letter-spacing: -0.03em;
 }

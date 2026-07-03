@@ -242,77 +242,118 @@ function App() {
 
         <div className="projects-grid">
           <article className="project-card">
-            <div className="project-image">
-              <span>FM</span>
-            </div>
-
-            <div className="project-content">
-              <h3>FitMangue</h3>
-              <p>
-                Aplicação criada para incentivar hábitos saudáveis, combater o
-                sedentarismo e apoiar pessoas na busca por mais qualidade de vida.
-              </p>
-
-              <div className="project-tags">
-                <span>HTML</span>
-                <span>CSS</span>
-                <span>JavaScript</span>
+              <div className="project-image">
+                <span>TD</span>
               </div>
 
-              <div className="project-actions">
-                <a href="#" className="project-btn">Ver detalhes</a>
-                <a href="#" className="project-icon">GitHub</a>
+              <div className="project-content">
+                <h3>Total Drama RPG Blog</h3>
+
+                <p>
+                  Blog desenvolvido para publicação de quadrinhos e conteúdos de uma
+                  temporada de Total Drama RPG. O projeto foi integrado ao Sanity CMS para
+                  que o cliente pudesse postar sem depender de programação, além de usar
+                  Firebase para login com Google, comentários e votação dos usuários.
+                </p>
+
+                <div className="project-tags">
+                  <span>React</span>
+                  <span>Vite</span>
+                  <span>Sanity CMS</span>
+                  <span>Firebase</span>
+                  <span>Google Auth</span>
+                </div>
+
+                <div className="project-actions">
+                  <a
+                    href="https://github.com/Joaovitor-bot/total-drama-rpg-blog.git"
+                    className="project-btn"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Ver código
+                  </a>
+
+                  <a href="https://total-drama-rpg-blog.vercel.app/" className="project-icon">
+                    Site online
+                  </a>
+                </div>
               </div>
-            </div>
-          </article>
+            </article>
 
           <article className="project-card">
+              <div className="project-image">
+                <span>EV</span>
+              </div>
+
+              <div className="project-content">
+                <h3>Evofit</h3>
+
+                <p>
+                  Plataforma de gestão para personal trainers, desenvolvida com
+                  Ionic/Angular no front-end e Node.js/Express no back-end. O sistema
+                  permite gerenciar alunos, treinos, agendamentos, histórico de
+                  treinamentos e dados do personal, utilizando API REST e banco SQLite.
+                </p>
+
+                <div className="project-tags">
+                  <span>Ionic</span>
+                  <span>Angular</span>
+                  <span>Node.js</span>
+                  <span>Express</span>
+                  <span>SQLite</span>
+                  <span>API REST</span>
+                </div>
+
+                <div className="project-actions">
+                  <a
+                    href="https://github.com/Joaovitor-bot/evofit.git"
+                    className="project-btn"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Ver código
+                  </a>
+
+                </div>
+              </div>
+            </article>
+
+         <article className="project-card">
             <div className="project-image">
-              <span>PI</span>
+              <span>MT</span>
             </div>
 
             <div className="project-content">
-              <h3>PET ID</h3>
+              <h3>MobileTicketsIonic</h3>
+
               <p>
-                Projeto voltado para auxiliar tutores no gerenciamento de
-                informações importantes dos seus pets, como saúde, alimentação
-                e vacinas.
+                Sistema mobile para controle de atendimento em filas de laboratórios
+                médicos, desenvolvido com Ionic, Angular, ngModules e Capacitor. A
+                aplicação simula emissão de senhas, chamada por prioridade, controle de
+                guichê, painel de últimas chamadas e relatórios de atendimento.
               </p>
 
               <div className="project-tags">
-                <span>HTML</span>
-                <span>CSS</span>
-                <span>UX/UI</span>
+                <span>Ionic</span>
+                <span>Angular</span>
+                <span>Capacitor</span>
+                <span>TypeScript</span>
+                <span>SCSS</span>
+                <span>Ionicons</span>
               </div>
 
               <div className="project-actions">
-                <a href="#" className="project-btn">Ver detalhes</a>
-                <a href="#" className="project-icon">GitHub</a>
-              </div>
-            </div>
-          </article>
+                <a
+                  href="https://github.com/Joaovitor-bot/MobileTicketsIonic.git"
+                  className="project-btn"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Ver código
+                </a>
 
-          <article className="project-card">
-            <div className="project-image">
-              <span>LR</span>
-            </div>
-
-            <div className="project-content">
-              <h3>LogReverse</h3>
-              <p>
-                Projeto com foco em sustentabilidade, propondo pontos de coleta
-                para resíduos orgânicos e incentivo ao descarte consciente.
-              </p>
-
-              <div className="project-tags">
-                <span>HTML</span>
-                <span>CSS</span>
-                <span>Sustentabilidade</span>
-              </div>
-
-              <div className="project-actions">
-                <a href="#" className="project-btn">Ver detalhes</a>
-                <a href="#" className="project-icon">GitHub</a>
+                
               </div>
             </div>
           </article>
