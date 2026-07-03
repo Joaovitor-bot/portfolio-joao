@@ -19,30 +19,38 @@ function App() {
       </header>
 
       <section id="home" className="hero">
-        <p className="tag">Desenvolvedor Front-end</p>
+        <div className="hero-content">
+          <div className="hero-text">
+            <p className="tag">Desenvolvedor Front-end</p>
 
-        <h1>
-          Olá, eu sou <span>João Rodrigues</span>
-        </h1>
+            <h1>
+              Olá, eu sou <span>João Rodrigues</span>
+            </h1>
 
-        <h2>Frontend Developer</h2>
+            <h2>Frontend Developer</h2>
 
-        <p className="description">
-          Crio interfaces modernas, responsivas e funcionais, com foco em
-          desenvolvimento web, boas práticas e experiência do usuário.
-        </p>
+            <p className="description">
+              Crio interfaces modernas, responsivas e funcionais, com foco em
+              desenvolvimento web, boas práticas e experiência do usuário.
+            </p>
 
-        <div className="buttons">
-          <a href="#projetos" className="btn primary">
-            Ver projetos
-          </a>
+            <div className="buttons">
+              <a href="#projetos" className="btn primary">
+                Ver projetos
+              </a>
 
-          <a href="#contato" className="btn secondary">
-            Entrar em contato
-          </a>
+              <a href="#contato" className="btn secondary">
+                Entrar em contato
+              </a>
+            </div>
+          </div>
+
+          <div className="hero-photo">
+            <img src="/images/foto-joao.jpg" alt="Foto de João Rodrigues" />
+          </div>
         </div>
       </section>
-
+      
             <section id="sobre" className="about">
         <div className="section-header">
           <p className="section-tag">Sobre mim</p>
