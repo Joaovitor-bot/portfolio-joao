@@ -163,6 +163,91 @@ function App() {
         </div>
       </section>
 
+            <section id="projetos" className="projects">
+        <div className="section-header">
+          <p className="section-tag">Projetos</p>
+          <h2>Alguns projetos que desenvolvi</h2>
+        </div>
+
+        <div className="projects-grid">
+          <article className="project-card">
+            <div className="project-image">
+              <span>FM</span>
+            </div>
+
+            <div className="project-content">
+              <h3>FitMangue</h3>
+              <p>
+                Aplicação criada para incentivar hábitos saudáveis, combater o
+                sedentarismo e apoiar pessoas na busca por mais qualidade de vida.
+              </p>
+
+              <div className="project-tags">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+              </div>
+
+              <div className="project-actions">
+                <a href="#" className="project-btn">Ver detalhes</a>
+                <a href="#" className="project-icon">GitHub</a>
+              </div>
+            </div>
+          </article>
+
+          <article className="project-card">
+            <div className="project-image">
+              <span>PI</span>
+            </div>
+
+            <div className="project-content">
+              <h3>PET ID</h3>
+              <p>
+                Projeto voltado para auxiliar tutores no gerenciamento de
+                informações importantes dos seus pets, como saúde, alimentação
+                e vacinas.
+              </p>
+
+              <div className="project-tags">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>UX/UI</span>
+              </div>
+
+              <div className="project-actions">
+                <a href="#" className="project-btn">Ver detalhes</a>
+                <a href="#" className="project-icon">GitHub</a>
+              </div>
+            </div>
+          </article>
+
+          <article className="project-card">
+            <div className="project-image">
+              <span>LR</span>
+            </div>
+
+            <div className="project-content">
+              <h3>LogReverse</h3>
+              <p>
+                Projeto com foco em sustentabilidade, propondo pontos de coleta
+                para resíduos orgânicos e incentivo ao descarte consciente.
+              </p>
+
+              <div className="project-tags">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>Sustentabilidade</span>
+              </div>
+
+              <div className="project-actions">
+                <a href="#" className="project-btn">Ver detalhes</a>
+                <a href="#" className="project-icon">GitHub</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
     </main>
   );
 }
