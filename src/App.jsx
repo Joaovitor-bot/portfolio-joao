@@ -40,6 +40,42 @@ function App() {
           </a>
         </div>
       </section>
+
+            <section id="sobre" className="about">
+        <div className="section-header">
+          <p className="section-tag">Sobre mim</p>
+          <h2>Conheça um pouco da minha trajetória</h2>
+        </div>
+
+        <div className="about-content">
+          <div className="about-text">
+            <p>
+              Sou João Rodrigues, estudante de Análise e Desenvolvimento de
+              Sistemas e desenvolvedor front-end em formação. Tenho interesse
+              em criar interfaces modernas, responsivas e funcionais,
+              transformando ideias em experiências digitais bem construídas.
+            </p>
+
+            <p>
+              Tenho conhecimentos em HTML, CSS, JavaScript, React, Angular,
+              Git, GitHub e design responsivo. Também possuo experiência com
+              suporte técnico, instalação de softwares e soluções em TI.
+            </p>
+          </div>
+
+          <div className="about-card">
+            <h3>Atualmente focado em:</h3>
+
+            <ul>
+              <li>Desenvolvimento Front-end</li>
+              <li>React e Angular</li>
+              <li>TypeScript e JavaScript</li>
+              <li>Interfaces responsivas</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      
     </main>
   );
 }
