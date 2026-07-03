@@ -1,9 +1,36 @@
-import { FaGithub, FaLinkedin, FaWhatsapp, FaInstagram } from "react-icons/fa";
+import { useEffect } from "react";
+import { FaGithub, FaLinkedin, FaWhatsapp, FaInstagram, FaHtml5, FaCss3Alt, FaJs, FaReact, FaAngular, FaGitAlt, FaNodeJs, FaDatabase } from "react-icons/fa";
+import { SiTypescript, SiVercel, SiDocker } from "react-icons/si";
 import "./App.css";
 
 function App() {
+  useEffect(() => {
+  const elements = document.querySelectorAll(".reveal");
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("show");
+        } else {
+          entry.target.classList.remove("show");
+        }
+      });
+    },
+    {
+      threshold: 0.15,
+    }
+  );
+
+  elements.forEach((element) => observer.observe(element));
+
+  return () => {
+    elements.forEach((element) => observer.unobserve(element));
+  };
+}, []);
+
   return (
-    <main className="portfolio">
+    <main className="portfolio ">
       <header className="header">
         <a href="#" className="logo">
           joaorodrigues.dev
@@ -18,7 +45,7 @@ function App() {
         </nav>
       </header>
 
-      <section id="home" className="hero">
+      <section id="home" className="hero reveal">
         <div className="hero-content">
           <div className="hero-text">
             <p className="tag">Desenvolvedor Front-end</p>
@@ -48,45 +75,48 @@ function App() {
           <div className="hero-photo">
             <img src="/images/foto-joao.jpg" alt="Foto de João Rodrigues" />
           </div>
-        </div>
-      </section>
-      
-            <section id="sobre" className="about">
-        <div className="section-header">
-          <p className="section-tag">Sobre mim</p>
-          <h2>Conheça um pouco da minha trajetória</h2>
+
         </div>
 
-        <div className="about-content">
-          <div className="about-text">
-            <p>
-              Sou João Rodrigues, estudante de Análise e Desenvolvimento de
-              Sistemas e desenvolvedor front-end em formação. Tenho interesse
-              em criar interfaces modernas, responsivas e funcionais,
-              transformando ideias em experiências digitais bem construídas.
-            </p>
-
-            <p>
-              Tenho conhecimentos em HTML, CSS, JavaScript, React, Angular,
-              Git, GitHub e design responsivo. Também possuo experiência com
-              suporte técnico, instalação de softwares e soluções em TI.
-            </p>
-          </div>
-
-          <div className="about-card">
-            <h3>Atualmente focado em:</h3>
-
-            <ul>
-              <li>Desenvolvimento Front-end</li>
-              <li>React e Angular</li>
-              <li>TypeScript e JavaScript</li>
-              <li>Interfaces responsivas</li>
-            </ul>
-          </div>
-        </div>
       </section>
 
-      <section id="skills" className="skills">
+             <section id="sobre" className="about reveal">
+                <div className="section-header">
+                  <p className="section-tag">Sobre mim</p>
+                  <h2>Conheça um pouco da minha trajetória</h2>
+                </div>
+
+                <div className="about-content">
+                  <div className="about-text">
+                    <p>
+                      Sou João Rodrigues, estudante de Análise e Desenvolvimento de
+                      Sistemas e desenvolvedor front-end em formação. Tenho interesse em
+                      criar interfaces modernas, responsivas e funcionais, transformando
+                      ideias em experiências digitais bem construídas.
+                    </p>
+
+                    <p>
+                      Tenho conhecimentos em HTML, CSS, JavaScript, React, Angular, Git,
+                      GitHub e design responsivo. Também possuo experiência com suporte
+                      técnico, instalação de softwares e soluções em TI.
+                    </p>
+
+                    <p>
+                      Além da tecnologia, gosto de explorar criatividade, música e novas
+                      referências visuais que me ajudam a desenvolver projetos com mais
+                      identidade e personalidade.
+                    </p>
+                  </div>
+
+                  <div className="about-visual">
+                    <video autoPlay muted loop playsInline>
+                      <source src="/videos/orb-video.mp4" type="video/mp4" />
+                    </video>
+                  </div>
+                </div>
+             </section>
+
+      <section id="skills" className="skills reveal">
         <div className="section-header">
           <p className="section-tag">Skills & Technologies</p>
           <h2>Tecnologias que utilizo nos meus projetos</h2>
@@ -94,48 +124,80 @@ function App() {
 
         <div className="skills-grid">
           <div className="skill-card">
+            <FaHtml5 className="skill-icon" />
             <h3>HTML5</h3>
             <p>Estruturação semântica de páginas web.</p>
           </div>
 
           <div className="skill-card">
+            <FaCss3Alt className="skill-icon" />
             <h3>CSS3</h3>
             <p>Estilização, responsividade e layouts modernos.</p>
           </div>
 
           <div className="skill-card">
+            <FaJs className="skill-icon" />
             <h3>JavaScript</h3>
             <p>Criação de interações e funcionalidades para interfaces.</p>
           </div>
 
           <div className="skill-card">
+            <SiTypescript className="skill-icon" />
             <h3>TypeScript</h3>
             <p>Desenvolvimento com tipagem para códigos mais seguros.</p>
           </div>
 
           <div className="skill-card">
+            <FaReact className="skill-icon" />
             <h3>React</h3>
             <p>Construção de interfaces modernas baseadas em componentes.</p>
           </div>
 
           <div className="skill-card">
+            <FaAngular className="skill-icon" />
             <h3>Angular</h3>
             <p>Desenvolvimento front-end com estrutura organizada.</p>
           </div>
 
           <div className="skill-card">
-            <h3>Git & GitHub</h3>
-            <p>Versionamento de código e publicação de projetos.</p>
+            <FaNodeJs className="skill-icon" />
+            <h3>Node.js</h3>
+            <p>Criação de aplicações, APIs e lógica no lado do servidor.</p>
           </div>
 
           <div className="skill-card">
+            <FaDatabase className="skill-icon" />
+            <h3>SQL</h3>
+            <p>Conhecimento em banco de dados, consultas e organização de informações.</p>
+          </div>
+
+          <div className="skill-card">
+            <SiDocker className="skill-icon" />
+            <h3>Docker</h3>
+            <p>Uso de containers para organizar e padronizar ambientes.</p>
+          </div>
+
+          <div className="skill-card">
+            <FaGitAlt className="skill-icon" />
+            <h3>Git</h3>
+            <p>Versionamento de código e controle de alterações.</p>
+          </div>
+
+          <div className="skill-card">
+            <FaGithub className="skill-icon" />
+            <h3>GitHub</h3>
+            <p>Publicação, organização e colaboração em projetos.</p>
+          </div>
+
+          <div className="skill-card">
+            <SiVercel className="skill-icon" />
             <h3>Vercel</h3>
             <p>Deploy de aplicações web de forma rápida e profissional.</p>
           </div>
         </div>
       </section>
 
-            <section className="experience">
+      <section className="experience reveal">
         <div className="section-header">
           <p className="section-tag">Experiência</p>
           <h2>Minha trajetória profissional</h2>
@@ -172,7 +234,7 @@ function App() {
         </div>
       </section>
 
-            <section id="projetos" className="projects">
+            <section id="projetos" className="projects reveal">
         <div className="section-header">
           <p className="section-tag">Projetos</p>
           <h2>Alguns projetos que desenvolvi</h2>
@@ -257,7 +319,7 @@ function App() {
         </div>
       </section>
 
-         <section id="contato" className="contact">
+         <section id="contato" className="contact reveal">
           <div className="section-header">
             <p className="section-tag">Contato</p>
             <h2>Vamos conversar?</h2>
