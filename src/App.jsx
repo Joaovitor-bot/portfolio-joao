@@ -1,3 +1,4 @@
+import { FaGithub, FaLinkedin, FaWhatsapp, FaInstagram } from "react-icons/fa";
 import "./App.css";
 
 function App() {
@@ -247,7 +248,59 @@ function App() {
           </article>
         </div>
       </section>
-      
+
+         <section id="contato" className="contact">
+          <div className="section-header">
+            <p className="section-tag">Contato</p>
+            <h2>Vamos conversar?</h2>
+          </div>
+
+          <div className="contact-box">
+            <p>
+              Estou aberto a oportunidades na área de tecnologia, projetos front-end,
+              estágios e conexões profissionais.
+            </p>
+
+            <div className="social-links">
+              <a
+                href="https://github.com/Joaovitor-bot"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="GitHub"
+              >
+                <FaGithub />
+              </a>
+
+              <a
+                href="https://www.linkedin.com/in/jo%C3%A3o-rodrigues-631a622b7/"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="LinkedIn"
+              >
+                <FaLinkedin />
+              </a>
+
+              <a
+                href="https://wa.me/5581992872652"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="WhatsApp"
+              >
+                <FaWhatsapp />
+              </a>
+
+              <a
+                href="https://www.instagram.com/jaoskyrox/"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="Instagram"
+              >
+                <FaInstagram />
+              </a>
+            </div>
+          </div>
+        </section>
+
     </main>
   );
 }
