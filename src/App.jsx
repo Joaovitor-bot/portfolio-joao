@@ -13,6 +13,7 @@ function App() {
           <a href="#sobre">Sobre</a>
           <a href="#skills">Tecnologias</a>
           <a href="#projetos">Projetos</a>
+          <a href="#certificados">Certificados</a>
           <a href="#contato">Contato</a>
         </nav>
       </header>
@@ -244,6 +245,57 @@ function App() {
                 <a href="#" className="project-icon">GitHub</a>
               </div>
             </div>
+          </article>
+        </div>
+      </section>
+
+            <section id="certificados" className="certificates">
+        <div className="section-header">
+          <p className="section-tag">Certificados</p>
+          <h2>Formações, cursos e conquistas</h2>
+        </div>
+
+        <div className="certificates-grid">
+          <article className="certificate-card">
+            <span className="certificate-year">2026</span>
+            <h3>Ciclo TakeOff UNINASSAU</h3>
+            <p>Formação complementar voltada ao desenvolvimento profissional e tecnologia.</p>
+            <a href="#" className="certificate-link">Ver certificado</a>
+          </article>
+
+          <article className="certificate-card">
+            <span className="certificate-year">32h</span>
+            <h3>Front-End</h3>
+            <p>Certificação Ada Tech + Santander com foco em desenvolvimento front-end.</p>
+            <a href="#" className="certificate-link">Ver certificado</a>
+          </article>
+
+          <article className="certificate-card">
+            <span className="certificate-year">40h</span>
+            <h3>JavaScript</h3>
+            <p>Curso em Vídeo com foco nos fundamentos da linguagem JavaScript.</p>
+            <a href="#" className="certificate-link">Ver certificado</a>
+          </article>
+
+          <article className="certificate-card">
+            <span className="certificate-year">Alura</span>
+            <h3>Imersão Front-End</h3>
+            <p>Experiência prática em criação de interfaces e desenvolvimento web.</p>
+            <a href="#" className="certificate-link">Ver certificado</a>
+          </article>
+
+          <article className="certificate-card">
+            <span className="certificate-year">Sebrae</span>
+            <h3>Atendimento ao Cliente</h3>
+            <p>Curso voltado à comunicação, atendimento e relacionamento profissional.</p>
+            <a href="#" className="certificate-link">Ver certificado</a>
+          </article>
+
+          <article className="certificate-card highlight">
+            <span className="certificate-year">HackaZero</span>
+            <h3>1º Lugar</h3>
+            <p>Reconhecimento por desempenho em desafio de inovação e tecnologia.</p>
+            <a href="#" className="certificate-link">Ver conquista</a>
           </article>
         </div>
       </section>
