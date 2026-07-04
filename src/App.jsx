@@ -113,9 +113,11 @@ function App() {
                   </div>
 
                   <div className="about-visual">
-                    <video autoPlay muted loop playsInline>
-                      <source src="/videos/orb-video.mp4" type="video/mp4" />
-                    </video>
+                    <img
+                      src="/images/orb-video.gif"
+                      alt="Animação decorativa"
+                      className="orb-gif"
+                    />
                   </div>
                 </div>
              </section>
