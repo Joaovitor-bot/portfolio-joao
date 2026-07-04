@@ -32,7 +32,7 @@ function App() {
   return (
     <main className="portfolio ">
       <header className="header">
-        <a href="#" className="logo">
+        <a href="https://github.com/Joaovitor-bot" className="logo">
           joaorodrigues.dev
         </a>
 
@@ -89,23 +89,27 @@ function App() {
                 <div className="about-content">
                   <div className="about-text">
                     <p>
-                      Sou João Rodrigues, estudante de Análise e Desenvolvimento de
-                      Sistemas e desenvolvedor front-end em formação. Tenho interesse em
-                      criar interfaces modernas, responsivas e funcionais, transformando
-                      ideias em experiências digitais bem construídas.
+                      Olá! Sou João Rodrigues, estudante de Análise e Desenvolvimento de Sistemas 
+                      pelo Embarque Digital e desenvolvedor front-end em formação.
+                      Sou apaixonado por tecnologia e por criar interfaces modernas, responsivas e intuitivas.
                     </p>
 
                     <p>
-                      Tenho conhecimentos em HTML, CSS, JavaScript, React, Angular, Git,
-                      GitHub e design responsivo. Também possuo experiência com suporte
-                      técnico, instalação de softwares e soluções em TI.
+                      Tenho conhecimentos em HTML, CSS, JavaScript, React, Angular, Git, GitHub, UX/UI e Design Responsivo,
+                       além de familiaridade com Inteligência Artificial aplicada ao desenvolvimento.
                     </p>
 
                     <p>
-                      Além da tecnologia, gosto de explorar criatividade, música e novas
-                      referências visuais que me ajudam a desenvolver projetos com mais
-                      identidade e personalidade.
+                      Entre minhas principais habilidades estão comunicação, trabalho em equipe,
+                      resolução de problemas, criatividade, organização, adaptabilidade e aprendizado contínuo.
+                      Também gosto de participar de hackathons e eventos de tecnologia para evoluir constantemente.
                     </p>
+
+                    <p>
+                      Fora da programação, sou apaixonado por filmes e música, que são grandes fontes de inspiração
+                      para minha criatividade e para a forma como desenvolvo meus projetos.
+                    </p>
+
                   </div>
 
                   <div className="about-visual">
@@ -203,31 +207,17 @@ function App() {
           <h2>Minha trajetória profissional</h2>
         </div>
 
-        <div className="timeline">
+        <div className="timeline">      
           <div className="timeline-item">
-            <div className="timeline-year">2024</div>
+            <div className="timeline-year">2024 - no momento </div>
 
             <div className="timeline-card">
-              <h3>Suporte Técnico</h3>
-              <span>Prefeitura de Jaboatão dos Guararapes</span>
+              <h3>Residência Onboard - Porto Digital</h3>
+              <span>Porto Digital</span>
               <p>
-                Atuação com suporte técnico, instalação de softwares,
-                atendimento a usuários e apoio em soluções de tecnologia da
-                informação.
-              </p>
-            </div>
-          </div>
-
-          <div className="timeline-item">
-            <div className="timeline-year">2024 - 2026</div>
-
-            <div className="timeline-card">
-              <h3>Auxiliar de Produção</h3>
-              <span>Stellantis</span>
-              <p>
-                Experiência profissional em ambiente corporativo, desenvolvendo
-                responsabilidade, organização, trabalho em equipe e disciplina
-                na rotina operacional.
+                Atividades extracurricular promovida pelo Porto Digital,
+                por meio do programa Embarque Digital, na qual os estudantes desenvolvem propostas de solução
+                para desafios reais apresentados por empresas parceiras.
               </p>
             </div>
           </div>
@@ -272,10 +262,6 @@ function App() {
                     rel="noreferrer"
                   >
                     Ver código
-                  </a>
-
-                  <a href="https://total-drama-rpg-blog.vercel.app/" className="project-icon">
-                    Site online
                   </a>
                 </div>
               </div>
@@ -357,6 +343,47 @@ function App() {
               </div>
             </div>
           </article>
+
+          <article className="project-card">
+              <div className="project-image">
+                <span>HZ</span>
+              </div>
+
+              <div className="project-content">
+                <h3>Monitoramento de Ecobarreiras</h3>
+
+                <p>
+                  Projeto vencedor do 1º lugar no Hackazero, desenvolvido em equipe com foco
+                  em sustentabilidade e meio ambiente. A solução propõe o monitoramento de
+                  ecobarreiras para melhorar a retenção de resíduos sólidos em rios,
+                  incentivando ações de preservação, impacto positivo e engajamento da
+                  comunidade.
+                </p>
+
+                <div className="project-tags">
+                  <span>Hackazero</span>
+                  <span>1º Lugar</span>
+                  <span>Sustentabilidade</span>
+                  <span>Meio Ambiente</span>
+                  <span>Inovação</span>
+                </div>
+
+                <div className="project-actions">
+                  <a
+                    href="https://canva.link/y9mdjpe731p5ooe"
+                    className="project-btn"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Slide
+                  </a>
+
+                  <a href="https://www.linkedin.com/posts/jo%C3%A3o-rodrigues-631a622b7_hackazero-tecnologia-inovaaexaeto-activity-7268329688471666688-GEno?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEwnHwUBJiR2a0eMpbeGaVPqeexJnTsRJcE" className="project-icon">
+                    Publicação
+                  </a>
+                </div>
+              </div>
+            </article>
         </div>
       </section>
 
@@ -392,7 +419,7 @@ function App() {
               </a>
 
               <a
-                href="https://wa.me/5581992872652"
+                href="https://wa.me/5581992872652?text=Ol%C3%A1%20Jo%C3%A3o%2C%20vi%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20conversar%20com%20voc%C3%AA."
                 target="_blank"
                 rel="noreferrer"
                 aria-label="WhatsApp"
@@ -411,6 +438,16 @@ function App() {
             </div>
           </div>
         </section>
+
+        <footer className="footer">
+          <p>
+            © 2026 João Rodrigues. Todos os direitos reservados.
+          </p>
+
+          <span>
+            Desenvolvido com React, Vite e muito café.
+          </span>
+        </footer>
 
     </main>
   );
